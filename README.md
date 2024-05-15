@@ -23,6 +23,9 @@ This React-based Expense Tracker application is developed for managing personal 
 4. **Graphical Representation**
    - Visually track income and expense amounts through graphical representation on the homepage.
 
+##  User Credentials
+   - Email: admin@aa.com
+   - Password: admin
 ### Screnshoots
 
 ![](./photos/desktop.gif)
