@@ -31,9 +31,9 @@ This React-based Expense Tracker application is developed for managing personal 
 ### Screnshoots
 
 
-![](./photos/desktop(3).png)
-![](./photos/desktop(2).png)
+![](./photos/desktop (3).png)
+![](./photos/desktop (2).png)
 ![](./photos/desktop.png)
-![](./photos/mobile(2).png)
+![](./photos/mobile (2).png)
 ![](./photos/mobile.png)
 
