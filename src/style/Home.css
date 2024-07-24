@@ -4,7 +4,7 @@
   justify-content: space-around;
 }
 
-.cards .total,
+.cards .balance,
 .cards .incomes,
 .cards .expenses {
   width: calc(33.33% - 20px); 
@@ -19,7 +19,7 @@
   right: 10px;
 }
 
-.cards .total,
+.cards .balance,
 .cards .incomes,
 .cards .expenses {
   position: relative;
@@ -36,7 +36,7 @@
   color: gray;
 }
 
-.cards .total p,
+.cards .balance p,
 .cards .incomes p,
 .cards .expenses p {
   font-size: 24px;
@@ -98,7 +98,7 @@
 
 
 @media screen and (max-width: 768px) {
-  .cards .total,
+  .cards .balance,
   .cards .incomes,
   .cards .expenses {
     width: 100%;

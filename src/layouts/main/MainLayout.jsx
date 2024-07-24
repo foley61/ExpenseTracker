@@ -10,15 +10,17 @@ import { useState } from "react";
 function MainLayout() {
   const Navigate = useNavigate()
   const { user } = useContext(AuthContext);
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
 
-
-
+  const toggleSidebar = () => {
+    setSidebarOpen(!isSidebarOpen);
+  };  
   return user ? (
     <>
- <S.MainLayout >
-    <Sidebar  />
+ <S.MainLayout isSidebarOpen={isSidebarOpen}>
+    <Sidebar isSidebarOpen={isSidebarOpen} setSidebarOpen={setSidebarOpen} toggleSidebar={toggleSidebar} />
       <Topbar />
-      <Main  />
+      <Main isSidebarOpen={isSidebarOpen} />
     </S.MainLayout>
     </>
   ) : (

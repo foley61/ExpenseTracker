@@ -7,7 +7,7 @@ const Topbar = () => {
   return (
     <S.Topbar>
       <S.UserRectangle>
-        <S.Username>John Doe</S.Username>
+        <S.Username>admin</S.Username>
         <S.ProfileIcon />
       </S.UserRectangle>
     </S.Topbar>

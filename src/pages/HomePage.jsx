@@ -27,8 +27,8 @@ const HomePage = () => {
   return (
     <div>
       <div className="cards">
-      <div className="total">
-        <h2>TOTAL</h2>
+      <div className="balance">
+        <h2>BALANCE</h2>
         <p>{total}$</p>
         <AiOutlineDollarCircle className='dollarIcon'/>
       </div>

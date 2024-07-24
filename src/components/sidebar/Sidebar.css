@@ -1,0 +1,31 @@
+.openBtn{
+    background: none;
+    border: none;
+    margin-top: 50%;
+}
+.openBtn:hover{
+    cursor: pointer;
+}
+.closeBtn{
+    width: 240px;
+    height: 72px;
+    color: white ;
+    margin: -10px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    background: #37474F;
+    border: none;
+}
+.closeBtn svg{
+    color: white;
+}
+.closeBtn:hover{
+    cursor: pointer;
+}
+@media (max-width: 1024px) {
+    .closeBtn{
+        
+        width: 100vw;
+    }
+}
