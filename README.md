@@ -30,11 +30,11 @@ This React-based Expense Tracker application is developed for managing personal 
    - Password: admin
 ### Screnshoots
 
-![](./photos/desktop2.png)
+![](./photos/desktop(2).png)
 
-![](./photos/desktop3.png)
+![](./photos/desktop(3).png)
 
-![](./photos/desktop1.png)
+![](./photos/desktop(1).png)
 
 ![](./photos/mobile2.png)
 
