@@ -4,12 +4,7 @@
   justify-content: space-around;
 }
 
-.cards .balance,
-.cards .incomes,
-.cards .expenses {
-  width: calc(33.33% - 20px); 
-  margin: 15px;
-}
+
 
 .cards .dollarIcon {
   font-size: 46px;
@@ -23,7 +18,7 @@
 .cards .incomes,
 .cards .expenses {
   position: relative;
-  width: calc(33.33% - 20px);
+  width: 100%; 
   min-height: 9rem;
   background-color: #fff;
   border-radius: 10px;

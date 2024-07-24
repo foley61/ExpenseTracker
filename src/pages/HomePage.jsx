@@ -27,11 +27,7 @@ const HomePage = () => {
   return (
     <div>
       <div className="cards">
-      <div className="balance">
-        <h2>BALANCE</h2>
-        <p>{total}$</p>
-        <AiOutlineDollarCircle className='dollarIcon'/>
-      </div>
+  
       <div className="incomes">
         <h2>INCOMES</h2>
         <p>{income}$</p>
@@ -43,6 +39,11 @@ const HomePage = () => {
         <p>{expense }$</p>
         <AiOutlineDollarCircle className='dollarIcon'/>
         <a href="/dashboard/expenses">view all</a>
+      </div>
+      <div className="balance">
+        <h2>BALANCE</h2>
+        <p>{total}$</p>
+        <AiOutlineDollarCircle className='dollarIcon'/>
       </div>
       </div>
       <div className="chartCard">
