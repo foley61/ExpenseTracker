@@ -2,6 +2,8 @@
 
 This React-based Expense Tracker application is developed for managing personal finances.
 
+For Backend: https://github.com/foley61/ExpenseTrackerApi
+
 ## Features
 
 - Expense Addition: Easily add expenses through the application.
