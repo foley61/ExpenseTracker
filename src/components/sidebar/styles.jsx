@@ -8,14 +8,14 @@ export const SidebarContainer = styled.aside`
   border-right: 1px solid #23344b;
   background-color: #37474F;
   height: 100%;
-  display: ${({ open }) => (open ? "flex" : "none")}; /* Duruma bağlı olarak görünürlüğü kontrol et */
+  display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 40px;
   box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
   position: relative;
-  transition: left 0.3s ease-in-out;
-  z-index: 10;
-  left: ${({ open }) => (open ? "0" : "-100%")};
+
+  
+  left: 0;
   @media (max-width: 768px) {
     width: 100vw;
     left: 0;
@@ -24,23 +24,7 @@ export const SidebarContainer = styled.aside`
 
 // Diğer stiller aynı kalır
 
-export const SidebarToggleBtn = styled.button`
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  z-index:2;
-  @media (max-width: 768px) {
-    display: block;
-  }
 
-  svg {
-    font-size: 24px;
-    color: #000;
-  }
-`;
 
 
 export const SidebarHeader = styled.header`
@@ -59,10 +43,12 @@ export const SidebarHeader = styled.header`
   }
 `;
 
+
 export const SidebarNav = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
+
 `;
 
 export const SidebarLink = styled(NavLink)`

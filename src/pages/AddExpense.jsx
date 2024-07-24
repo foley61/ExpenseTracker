@@ -1,22 +1,24 @@
 import React, { useEffect, useState } from "react";
-import "../../style/addincome.css"
-import { useNavigate } from "react-router-dom";
-export let Income = {}
-export const AddIncome = () => {
-   const [income, setIncome] = useState([]);
+import "../style/addexpense.css"
+import { Link, useNavigate } from "react-router-dom";
+export let Expense = {}
+ const AddExpense = () => {
+   const [expense, setExpense] = useState([]);
    const [desc,setDesc] = useState([]);
    const [title,setTitle] = useState([]);
    const [date,setDate] = useState([]);
    console.log("date",date)
    const navigate = useNavigate()
    const id = crypto.randomUUID();
-   const amount = Number(income.slice(-1).toString()); 
-  async function addincome (data){
+   const amount = Number(expense.slice(-1).toString()); 
    
-      const incomes = JSON.parse(localStorage.getItem("incomes")) || [];
-      incomes.push(data);
-      localStorage.setItem("incomes", JSON.stringify(incomes));
-      navigate("/dashboard/incomes")
+
+   async function addExpense(data){
+   
+     const expenses = JSON.parse(localStorage.getItem("expenses")) || [];
+     expenses.push(data);
+     localStorage.setItem("expenses", JSON.stringify(expenses));
+     navigate("/dashboard/expenses")
 
 } 
 
@@ -27,8 +29,8 @@ export const AddIncome = () => {
         <input
           type="number"
          
-          onInput={(e) => setIncome([...income, e.target.value])}
-          placeholder="enter income"
+          onInput={(e) => setExpense([...expense,-e.target.value])}
+          placeholder="enter expense"
         />
         <input type="text" placeholder="title"
         onInput={(e) => setTitle(e.target.value)}
@@ -39,9 +41,10 @@ export const AddIncome = () => {
         <input type="date" placeholder="date"
         onInput={(e) => setDate(e.target.value)}
         />
-        <input type="button" value="send" onClick={() => addincome({id,amount,desc,date,title})} />
+        <input type="button" value="send" onClick={() => addExpense({id,amount,desc,date,title})} />
      
       </form>
     </div>
   );
 };
+export default AddExpense;

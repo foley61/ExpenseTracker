@@ -1,9 +1,9 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import * as S from "./styles";
-const Main = ({ isSidebarOpen }) => {
+const Main = () => {
   return (
-    <S.Main isSidebarOpen={isSidebarOpen}>
+    <S.Main >
         <Outlet/>
     </S.Main>
   )
